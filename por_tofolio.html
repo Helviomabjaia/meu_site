@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.topo {
+  flex: 3;
+  background: url('sua-imagem-de-fundo.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.apresentacao {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 90%;
+}
+
+.apresentacao h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.apresentacao p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.icones a {
+  margin: 0 15px;
+  color: white;
+  font-size: 28px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icones a:hover {
+  transform: scale(1.2);
+  color: #00ffcc;
+}
+
+.fundo {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #333;
+}
+
+.bloco {
+  flex: 1 1 300px;
+  max-width: 30%;
+  margin: 10px;
+}
+
+.bloco h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-bottom: 2px solid #aaa;
+}
+
+.bloco p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .bloco {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .topo {
+    padding: 10px;
+  }
+
+  .apresentacao {
+    padding: 20px;
+  }
+
+  .bloco {
+    max-width: 100%;
+  }
+
+  .apresentacao h1 {
+    font-size: 26px;
+  }
+
+  .apresentacao p {
+    font-size: 16px;
+  }
+
+  .icones a {
+    font-size: 24px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="topo">
+    <div class="apresentacao">
+      <h1>Olá, sou Helvio!</h1>
+      <p>Desenvolvedor apaixonado por transformar ideias em experiências digitais.</p>
+      <div class="icones">
+        <a href="https://wa.me/SEU_NUMERO" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com/SEU_USUARIO" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/SEU_PERFIL" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:SEU_EMAIL@email.com" title="E-mail"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fundo">
+    <div class="bloco">
+      <h2>Perfil</h2>
+      <p> Hélvio Mabjaia, Profissional 
+        de TI com sólida formação em 
+        redes e análise de dados,em 
+        constante busca por 
+        aprimoramento técnico.
+         Possuo forte base teóri
+         ca e 
+        prática em diversas 
+        tecnologi
+         tecnologi
+         as, com foco em 
+        as, com foco em redes 
+        de computadores e 
+        ferramentas de business 
+        intel
+         ligence</p>
+    </div>
+
+    <div class="bloco">
+        <h2>Formação</h2>
+        <p>
+          <strong>2007–2013:</strong> Ensino Primário na Escola Primária Completa das Mahotas, Maputo.<br>
+          <strong>2014–2018:</strong> Ensino Secundário na Escola Secundária Eduardo Mondlane, Maputo.<br>
+          <strong>2019–2021:</strong> Segundo nível de Licenciatura em Informática na UEM, Maputo.<br>
+          <strong>2021–2022:</strong> CCNA v7 (Introduction to Networks e Switching, Routing, and Wireless Essentials) — CIUEM.<br>
+          <strong>Atualmente:</strong> Segundo nível de LASIR na USTM.<br>
+          <strong>2024:</strong> Network Security na Alibaba Cloud.<br>
+          <strong>2024:</strong> Simplifica Excel Express e Simplifica Power BI Express.<br>
+          <strong>2025:</strong> Auto Scaling Fundamentals na Alibaba Cloud.
+        </p>
+      </div>
+      
+
+      <div class="bloco">
+        <h2>Habilidades Técnicas</h2>
+        <p>
+          <strong>Redes:</strong> CCNA Introduction to Networking, CCNA v7 Switching, Routing and Wireless Essentials. Experiência em configuração e troubleshooting de redes.<br><br>
+          
+          <strong>Análise de Dados:</strong> Proficiência em Power BI e Excel para coleta, limpeza, transformação e visualização de dados. Criação de relatórios e dashboards personalizados.<br><br>
+          
+          <strong>Linguagens de Programação:</strong> Pascal, Java, HTML, CSS.<br><br>
+          
+          <strong>Sistemas Operacionais:</strong> Windows e Linux.
+        </p>
+      </div>
+      
+  </div>
+</body>
+</html>

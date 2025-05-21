@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tela {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .lado {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .esquerdo {
+    background-color: #555353;
+    color: white;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+    clip-path: path("M 0 0 H 100% V 100% Q 70% 50% 0 100% Z");
+    transition: clip-path 1.5s ease, background-color 1.5s ease, color 1.5s ease;
+  }
+  
+  .direito {
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .seguir-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #777;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .seguir-btn:hover {
+    background-color: #999;
+    transform: scale(1.05);
+  }
+  
+  .redes-sociais {
+    margin-top: 30px;
+  }
+  
+  .redes-sociais a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .redes-sociais a:hover {
+    color: #ff3366;
+  }
+  
+  /* Transição */
+  .tela.inverter .esquerdo {
+    background-color: white;
+    color: black;
+    clip-path: path("M 0 0 H 100% V 100% Q 100% 50% 0 100% Z");
+  }
+  
+  .tela.inverter .direito {
+    background-color: #555353;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 768px) {
+    .tela {
+      flex-direction: column;
+    }
+  
+    .lado {
+      flex: none;
+      width: 100%;
+      height: auto;
+      padding: 40px 20px;
+    }
+  
+    .esquerdo {
+      clip-path: none;
+    }
+  
+    .tela.inverter .esquerdo {
+      clip-path: none;
+    }
+  }
+  

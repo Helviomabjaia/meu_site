@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eu!</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="tela" id="tela">
+    <!-- Parte esquerda (cinza) -->
+    <div class="lado esquerdo" id="esquerdo">
+      <div class="container">
+        <h1>Bem-vindo!</h1>
+        <p>Sou alguém que transforma ideias em projetos. Quer saber mais? Segue para mais!</p>
+        <img src="minha-foto.jpg" alt="" class="foto-perfil" />
+        <button class="seguir-btn" onclick="animarTransicao()"> 
+          <i class="fas fa-heart"></i> Seguir
+        </button>
+        <div class="redes-sociais">
+          <a href="https://instagram.com/seuusuario" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/seuusuario" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/seuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Parte direita (branca) -->
+    <div class="lado direito">
+      <!-- Nada necessário aqui por enquanto -->
+    </div>
+  </div>
+
+  <script>
+    function animarTransicao() {
+      const tela = document.getElementById('tela');
+      tela.classList.add('inverter');
+
+      setTimeout(() => {
+        window.location.href = 'por_tofolio.html';
+      }, 1500);
+    }
+  </script>
+</body>
+</html>
